@@ -1,0 +1,81 @@
+.dropdown { 
+  vertical-align: top;
+  padding: 0px 16px;
+  width: auto;
+  margin-top: -10px;
+  padding-top: 10px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  border-left: 4px solid black;
+  background: #ef9b0f;
+  font-size: 1.55em;
+  color: #fff;
+  font-weight: normal;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.dropdown:hover { 
+	color: #898989; 
+}
+
+.dropdown>.gwt-Label{
+	white-space: nowrap;
+	color: #fff;
+	font-weight: 400;
+	font-family: "Quicksand", "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 18px;
+}
+
+.dropdown.open {
+  background: #ef9b0f;
+  color: #fff;
+  border-left-color: #6c6d70;
+}
+
+.dropdown ul { 
+  position: absolute;
+  margin: 0px;
+  top: 100%;
+  margin: 0px;
+  left: -4px; /* move content -4px because of container left border */
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  display: none;
+  padding: 5px 0px;
+  border-left: 4px solid #6c6d70;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  -webkit-transition: max-height 500ms linear 0ms;
+  transition: max-height 500ms linear 0ms;
+  z-index: 1;
+}
+
+.dropdown ul li {
+	font-weight: 400;
+	font-family: "Quicksand", "Open Sans", "Helvetica Neue", "Helvetica",
+		sans-serif;
+	font-size: 18px;
+}
+
+.dropdown ul li a { 
+  text-decoration: none;
+  display: block;
+  color: #ef9b0f;
+  padding: 7px 15px;
+}
+.dropdown ul li a:hover {
+  background: #ECE6DC;
+}
+
+.dropdown.open ul{
+  display: inline-block;
+  max-height: 200px;
+}
