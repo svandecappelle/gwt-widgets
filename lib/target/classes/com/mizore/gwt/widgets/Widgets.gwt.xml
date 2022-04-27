@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Widgets'>
+	<inherits name="com.google.gwt.user.User" />
+
+	<inherits name="com.github.gwtbootstrap.Bootstrap" />
+
+	<inherits name='com.google.gwt.junit.JUnit' />
+
+	<source path='client' />
+	<source path='shared' />
+
+</module>
